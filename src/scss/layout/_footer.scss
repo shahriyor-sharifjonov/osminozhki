@@ -1,0 +1,113 @@
+.footer{
+    margin-top: 120px;
+    background: #00A9DA;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    @include media(1400){
+        margin-top: 60px;
+    }
+    &__body{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        @include media(992){
+            flex-direction: column;
+        }
+    }
+    &__logo{
+        margin-bottom: 30px;
+        line-height: 0;
+        display: block;
+    }
+    &__soc{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+        margin-bottom: 15px;
+    }
+    &__tel{
+        color: #FFF;
+        text-decoration: none;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 160%;
+    }
+    &__whatsapp{
+        line-height: 0;
+    }
+    &__right{
+        max-width: 625px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 90px;
+        @include media(1400){
+            max-width: 490px;
+        }
+        @include media(992){
+            margin-top: 50px;
+            gap: 0;
+        }
+    }
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 300px;
+        width: 100%;
+        gap: 17px 135px;
+    }
+    &__link{
+        min-width: 82px;
+        color: #FFF;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 160%;
+        text-decoration: none;
+    }
+    &__code{
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        color: #fff;
+    }
+    &__loc{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 5px;
+        color: #FFF;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 160%;
+        margin-bottom: 50px;
+        @include media(992){
+            margin-bottom: 0;
+        }
+    }
+    &__privacy{
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-decoration: none;
+        color: #fff;
+        &.lg{
+            @include media(992){
+                display: none;
+            }
+        }
+        &.sm{
+            display: none;
+            @include media(992){
+                display: block;
+                margin-top: 50px;
+                margin-bottom: 16px;
+            }
+        }
+    }
+}
