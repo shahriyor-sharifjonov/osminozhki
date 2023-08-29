@@ -2,7 +2,6 @@
     padding-top: 25px;
     @include media(1400){
         padding-top: 60px;
-        scroll-margin: -30px;
     }
     &__content{
         display: flex;

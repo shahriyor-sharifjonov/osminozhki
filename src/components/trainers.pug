@@ -1,0 +1,44 @@
+mixin trainers()
+    section.section.trainers#trainers
+        .trainers__body.container 
+            .slider-title.trainers__header 
+                h2.title.trainers__title Тренерский состав
+                .slider-navigation.trainers__navigation.slider-title-nav  
+                    button(type='button').trainers__prev.swiper-button-prev
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M25 45.8334C13.4941 45.8334 4.16671 36.506 4.16671 25.0001C4.16671 13.4941 13.4941 4.16675 25 4.16675C36.506 4.16675 45.8334 13.4941 45.8334 25.0001C45.8334 36.506 36.506 45.8334 25 45.8334Z" />
+                            <path d="M27.625 32.3541L20.2917 24.9999L27.625 17.6458" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    button(type='button').trainers__next.swiper-button-next
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M25 45.8334C36.5059 45.8334 45.8333 36.506 45.8333 25.0001C45.8333 13.4941 36.5059 4.16675 25 4.16675C13.494 4.16675 4.16663 13.4941 4.16663 25.0001C4.16663 36.506 13.494 45.8334 25 45.8334Z" />
+                            <path d="M22.375 32.3541L29.7083 24.9999L22.375 17.6458" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+            .trainers__slider 
+                .swiper.trainers__swiper 
+                    .swiper-wrapper.trainers__wrapper 
+                        .swiper-slide.trainers__slide 
+                            .trainers__slide-img 
+                                img(src="@img/trainer-1.png", alt="" draggable="false")
+                            p.trainers__slide-title Ирина Ларионова
+                            a(href="trainer-1.html").trainers__slide-btn.btn Подробнее 
+                        .swiper-slide.trainers__slide 
+                            .trainers__slide-img 
+                                img(src="@img/trainer-2.png", alt="" draggable="false")
+                            p.trainers__slide-title Виктор Ларионов
+                            a(href="trainer-1.html").trainers__slide-btn.btn Подробнее 
+                        .swiper-slide.trainers__slide 
+                            .trainers__slide-img 
+                                img(src="@img/trainer-3.png", alt="" draggable="false")
+                            p.trainers__slide-title Алла Атаманова
+                            a(href="trainer-1.html").trainers__slide-btn.btn Подробнее 
+                        .swiper-slide.trainers__slide 
+                            .trainers__slide-img 
+                                img(src="@img/trainer-4.png", alt="" draggable="false")
+                            p.trainers__slide-title Елизавета Царевна
+                            a(href="trainer-1.html").trainers__slide-btn.btn Подробнее 
+                        .swiper-slide.trainers__slide 
+                            .trainers__slide-img 
+                                img(src="@img/trainer-5.png", alt="" draggable="false")
+                            p.trainers__slide-title Луговнин Илья
+                            a(href="trainer-1.html").trainers__slide-btn.btn Подробнее 

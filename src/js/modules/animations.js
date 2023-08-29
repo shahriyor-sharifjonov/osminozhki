@@ -79,6 +79,21 @@ export const init = () => {
             })
         },
         "(min-width: 576px)": function() {
+            gsap.utils.toArray(".trainers__slider").forEach(el => {
+                const tl = gsap.timeline({
+                    scrollTrigger: {
+                        trigger: el,
+                        start: "top bottom",
+                        end: "bottom top",
+                        markers: false,
+                        scrub: 1,
+                    }
+                })
+                tl.add('start')
+                    .fromTo(".trainers__slider", {
+                        x: 0,
+                    }, {x: -570}, 'start')
+            })
         },
         "(max-width: 992px)": function() {
         },

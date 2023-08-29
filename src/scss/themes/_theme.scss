@@ -17,6 +17,9 @@
 }
 body{
     background: #F6F6F6;
+    max-width: 3000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .wrapper{
     min-height: 100%;
@@ -160,5 +163,45 @@ ul{
     }
     span{
         color: #00A9DA;
+    }
+}
+.slider-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .title{
+        @include media(480){
+            max-width: 280px;
+        }
+    }
+    &-nav{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 30px;
+        @include media(480){
+            width: 130px;
+            min-width: 130px;
+            gap: 15px;
+        }
+    }
+}
+.swiper-button-prev,
+.swiper-button-next{
+    &:hover{
+        svg path{
+            fill: #00BBF1;
+        }
+    }
+    &:active{
+        svg path{
+            fill: #0098C5;
+        }
+    }
+    svg{
+        path{
+            fill: #00A9DA;
+            transition: 300ms ease-out;
+        }
     }
 }
