@@ -1,0 +1,11 @@
+mixin form()
+    section.section.form
+        .form__body.container 
+            .form__info 
+                h2.title.form__title Запишитесь #[br]на пробное занятие
+                p.form__desc Групповая или индивидуальная тренировка и консультация с тренером. Оставьте контактные данные, чтобы мы могли связаться с вами и обсудить дату и время.
+            form(action="#!").form__content 
+                input(type="text" placeholder="Ваше имя").form__input.input 
+                input(type="text" placeholder="Ваш телефон").form__input.input 
+                button(type="submit").form__btn.btn Записаться
+                p.form__p Отправляя заявку вы соглашаетесь#[br]с #[a(href="privacy.html") политикой конфиденциальности]

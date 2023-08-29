@@ -205,3 +205,21 @@ ul{
         }
     }
 }
+.input{
+    border-radius: 20px;
+    background: #FFF;
+    color: #1F1F1F;
+    border: none;
+    padding: 25px 40px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    @include media(480){
+        font-size: 16px;
+    }
+    &::placeholder{
+        color: #1F1F1F;
+        opacity: .5;
+    }
+}
