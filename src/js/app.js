@@ -4,6 +4,7 @@ import * as header from "./modules/header.js";
 import * as smoothscroll from "./modules/smoothscroll.js";
 import * as swipers from "./modules/swipers.js";
 import * as acc from "./modules/acc.js";
+import * as popup from "./modules/popup.js";
 
 functions.isWebp();
 animations.init();
@@ -11,3 +12,4 @@ header.init();
 smoothscroll.init();
 swipers.init();
 acc.init();
+popup.init();
