@@ -790,7 +790,7 @@ ul {
   border-radius: 20px;
   background: #FFF;
   max-width: 630px;
-  width: 100%;
+  width: calc(100% - 10px);
   padding: 50px 57px;
   position: relative;
   display: -webkit-box;
@@ -835,6 +835,26 @@ ul {
 
 .popup__input {
   border: 1px solid #1F1F1F;
+}
+
+.thanks-title {
+  color: #1F1F1F;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.thanks-p {
+  color: #1F1F1F;
+  text-align: center;
+  opacity: 0.8;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
 }
 
 .header {
@@ -2622,7 +2642,7 @@ ul {
   }
 
   .popup__body {
-    padding: 50px 20px 30px 20px;
+    padding: 50px 20px;
   }
 
   .popup__close {
@@ -2774,6 +2794,15 @@ ul {
 @media (max-width: 576px) {
   .popup__title {
     font-size: 24px;
+  }
+
+  .thanks-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .thanks-p {
+    font-size: 16px;
   }
 }
 

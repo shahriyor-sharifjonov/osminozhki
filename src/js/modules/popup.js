@@ -18,4 +18,22 @@ export const init = () => {
             el.classList.add('active')
         })
     })
+
+    const forms = document.querySelectorAll('form');
+    forms.forEach(form => {
+        form.addEventListener('submit', (e) => {
+            e.preventDefault()
+            const inputs = form.querySelectorAll('input');
+            inputs.forEach(el => {
+                el.value = ''
+            })
+            const popups = document.querySelectorAll('.popup');
+            popups.forEach(el => {
+                el.classList.remove('active')
+            })
+            const thanks = document.querySelector('.popup#thanks');
+            thanks.classList.add('active');
+        })
+    })
+
 }

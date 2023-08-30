@@ -632,7 +632,7 @@ ul{
         border-radius: 20px;
         background: #FFF;
         max-width: 630px;
-        width: 100%;
+        width: calc(100% - 10px);
         padding: 50px 57px;
         position: relative;
         display: flex;
@@ -641,7 +641,7 @@ ul{
         align-items: center;
         flex-direction: column;
         @include media(768){
-            padding: 50px 20px 30px 20px;
+            padding: 50px 20px;
         }
     }
     &__close{
@@ -691,5 +691,30 @@ ul{
         @include media(480){
             margin-top: 20px !important;
         }
+    }
+}
+.thanks-title{
+    color: #1F1F1F;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    @include media(576){
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+}
+.thanks-p{
+    color: #1F1F1F;
+    text-align: center;
+    opacity: 0.8;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    @include media(576){
+        font-size: 16px;
     }
 }
