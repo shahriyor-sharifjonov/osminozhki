@@ -1,0 +1,58 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="css/style.min.css")
+        title Осьминожки
+    body 
+        .wrapper 
+            include components/header 
+            +header 
+            main.main 
+                .breadcrumb 
+                    .breadcrumb__body.container 
+                        a(href="index.html").breadcrumb__link 
+                            span Главная 
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.4297 5.92999L20.4997 12L14.4297 18.07" stroke="#1F1F1F" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3.5 12H20.33" stroke="#1F1F1F" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        a(href="#trainers").breadcrumb__link.active 
+                            span Тренера 
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.4297 5.92999L20.4997 12L14.4297 18.07" stroke="#1F1F1F" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3.5 12H20.33" stroke="#1F1F1F" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        a(href="#top").breadcrumb__link.active 
+                            span Виктор Ларионов
+                .details 
+                    .details__body.container 
+                        .details__img 
+                            img(src="@img/detail-2.png", alt="" draggable="false")
+                        .details__content 
+                            h1.details__title Виктор Ларионов
+                                span Тренерский опыт - 19 лет
+                            p.details__p Обучался в Великолукской академии физической культуры и спорта. Мастер спорта по плаванию, финалист Чемпионатов России, участник этапов Кубка Мира по плаванию
+                .gallery 
+                    .gallery__body.container 
+                        .gallery__img
+                            img(src="@img/tra-1.png", alt="" draggable="false")
+                        .gallery__img
+                            img(src="@img/tra-2.png", alt="" draggable="false")
+                        .gallery__img
+                            img(src="@img/tra-3.png", alt="" draggable="false")
+                        .gallery__img
+                            img(src="@img/tra-4.png", alt="" draggable="false")
+                        .gallery__img
+                            img(src="@img/tra-5.png", alt="" draggable="false")
+                        .gallery__img
+                            img(src="@img/tra-6.png", alt="" draggable="false")
+                include components/form 
+                +form 
+                include components/trainers 
+                +trainers 
+            include components/footer 
+            +footer
+        script(src="js/app.min.js") 
