@@ -1,0 +1,20 @@
+.game{
+    padding-top: 120px;
+    @include media(1400){
+        padding-top: 60px;
+    }
+    .why__top{
+        margin-bottom: 60px;
+        @include media(992){
+            margin-bottom: 30px;
+        }
+    }
+    &__img{
+        width: 100%;
+        line-height: 0;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

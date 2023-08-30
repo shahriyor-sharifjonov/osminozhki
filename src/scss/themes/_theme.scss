@@ -167,9 +167,11 @@ ul{
 }
 .slider-title{
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
+    margin-bottom: 30px;
     .title{
+        margin-bottom: 0;
         @include media(480){
             max-width: 280px;
         }
