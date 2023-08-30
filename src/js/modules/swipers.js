@@ -19,4 +19,19 @@ export const init = () => {
             }
         }
     });
+    const swiper2 = new Swiper(".reviews__swiper", {
+        spaceBetween: 20,
+        slidesPerView: 1,
+        modules: [FreeMode, Navigation],
+        loop: true,
+        navigation: {
+            nextEl: ".reviews__next",
+            prevEl: ".reviews__prev"
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: "auto",
+            },
+        }
+    });
 }

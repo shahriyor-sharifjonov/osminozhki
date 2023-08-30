@@ -1607,6 +1607,55 @@ ul {
   height: 100%;
 }
 
+.reviews {
+  padding-top: 120px;
+}
+
+.reviews__slider {
+  position: relative;
+}
+
+.reviews__swiper {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.reviews__wrapper {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reviews__slide {
+  border-radius: 20px;
+  background: #FFF;
+  padding: 40px 40px 50px 40px;
+  width: 625px;
+}
+
+.reviews__slide-name {
+  color: #1F1F1F;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+}
+
+.reviews__slide-p {
+  color: #1F1F1F;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 767px;
@@ -1857,6 +1906,10 @@ ul {
     margin-top: 45px;
     margin-bottom: -45px;
   }
+
+  .reviews {
+    padding-top: 116px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1998,6 +2051,10 @@ ul {
     margin-top: 45px;
     margin-bottom: -45px;
   }
+
+  .reviews {
+    padding-top: 104px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2113,6 +2170,18 @@ ul {
   .clients__img:nth-of-type(6) {
     margin-top: 30px;
     margin-bottom: -30px;
+  }
+
+  .reviews {
+    padding-top: 90px;
+  }
+}
+
+@media (max-width: 767px) {
+  .reviews__slide {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
   }
 }
 
@@ -2256,6 +2325,39 @@ ul {
   .clients__img:nth-of-type(6) {
     margin-top: 22px;
     margin-bottom: -22px;
+  }
+
+  .reviews {
+    padding-top: 80px;
+  }
+
+  .reviews__header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 20px;
+  }
+
+  .reviews__header .slider-navigation {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
+  .reviews__slide {
+    padding: 40px;
+  }
+
+  .reviews__slide-p {
+    font-size: 16px;
   }
 }
 
