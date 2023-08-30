@@ -225,3 +225,52 @@ ul{
         opacity: .5;
     }
 }
+.accordion{
+    border-radius: 20px;
+    background: #FFF;
+    padding: 30px;
+    &+.accordion{
+        margin-top: 30px;
+    }
+    &__button{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        text-align: left;
+        color: #1F1F1F;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 160%;
+        @include media(768){
+            font-size: 16px;
+        }
+        svg{
+            position: relative;
+            transition: 300ms ease-out;
+        }
+        &.active{
+            svg{
+                transform: rotate(-45deg);
+            }
+        }
+        span{
+            max-width: calc(100% - 60px);
+        }
+    }
+    &__content{
+        padding-top: 30px;
+        display: none;
+    }
+    &__p{
+        color: #1F1F1F;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 160%;
+        @include media(768){
+            font-weight: 400;
+        }
+    }
+}
