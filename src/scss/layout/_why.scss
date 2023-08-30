@@ -15,6 +15,15 @@
         }
     }
     &__title{
+        &.tac{
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 655px;
+            text-align: center;
+            @include media(992){
+                margin-bottom: 30px;
+            }
+        }
         @include media(992){
             max-width: 470px;
             margin-bottom: 0;
@@ -100,6 +109,9 @@
             font-style: normal;
             font-weight: 500;
             line-height: 150%;
+            @include media(1400){
+                max-width: 350px;
+            }
             @include media(480){
                 font-size: 18px;
                 max-width: 200px;

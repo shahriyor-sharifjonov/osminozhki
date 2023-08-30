@@ -1087,6 +1087,13 @@ ul {
   gap: 20px;
 }
 
+.why__title.tac {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 655px;
+  text-align: center;
+}
+
 .why__p {
   margin-top: 11px;
   max-width: 625px;
@@ -1621,6 +1628,10 @@ ul {
     min-height: 270px;
   }
 
+  .why__item-title {
+    max-width: 350px;
+  }
+
   .prices {
     padding-top: 60px;
   }
@@ -1732,6 +1743,10 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+
+  .why__title.tac {
+    margin-bottom: 30px;
   }
 
   .why__title {
